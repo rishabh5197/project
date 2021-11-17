@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add music</title>
+    <link rel="stylesheet" href="css/addmusic.css" />
+  </head>
+  <body>
+    <!-- header starts here -->
+    <div id="header">
+      <div align="center">
+        <img src="images/logo.png" alt="Logo" id="logo" />
+      </div>
+      <div><p id="logo_text">Music Lists</p></div>
+      <div>
+        <img src="images/profile.png" alt="" srcset="" id="profileimage" />
+      </div>
+    </div><br>
+    <div align="right">
+      <button
+        style="font-size: 2rem; background-color: red; color: white"
+        type="submit"
+        onclick="signout()"
+      >
+        Signout
+      </button>
+    </div>
+    <div align="center">
+      <div id="pagetitle">Add Music</div>
+    </div>
+    <div id="grid">
+      <div id="image" align="center">
+        <img src="images/music .png" alt="" srcset="" id="image1" />
+      </div>
+      <div id="content">
+        <div id="cols">
+          <div id="gentext">Title</div>
+          <div>
+            <input type="text" name="title" id="title" placeholder="Perfect" />
+          </div>
+        </div>
+        <div id="cols">
+          <div id="gentext">Singer</div>
+          <div>
+            <input
+              type="text"
+              name="singer"
+              id="singer"
+              placeholder="Ed shreen"
+            />
+          </div>
+        </div>
+        <div id="cols">
+          <div id="gentext">Duration</div>
+          <div>
+            <input
+              type="text"
+              name="duration"
+              id="duration"
+              placeholder="2 min 5 sec"
+            />
+          </div>
+        </div>
+        <div align="center">
+          <input type="button" value="Add to list" onclick="addmusic()" />
+        </div>
+      </div>
+    </div>
+    <div align="center">
+      <a href="landing page.html">
+        <button
+          type="submit"
+          style="
+            background-color: #a33131;
+            color: white;
+            font-size: 2rem;
+            padding: 1%;
+            border-radius: 2.5rem;
+          "
+        >
+          Back to home
+        </button>
+      </a>
+    </div>
+    <br />
+    <div id="footer" align="center">Music Corporation Limited</div>
+    <script src="js/addmusic.js"></script>
+  </body>
+</html>

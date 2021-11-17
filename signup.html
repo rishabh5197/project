@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <!-- header starts here -->
+    <div id="header">
+      <div align="center">
+        <img src="images/logo.png" alt="Logo" id="logo" />
+      </div>
+      <div><p id="logo_text">Music Lists</p></div>
+    </div>
+    <!-- header ends here -->
+    <div align="center">
+      <p style="font-size: 4rem; color: white">Register</p>
+    </div>
+
+    <div id="maincontent">
+      <div>
+        <img
+          src="images/Add User-bro.png"
+          alt="Register user"
+          srcset=""
+          id="image"
+        />
+      </div>
+      <div id="content">
+        <div id="title" align="center">Create new account</div>
+        <div align="center">
+          <p id="generaltext">Use your email to create new account</p>
+        </div>
+        <div id="inputs">
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="First Name"
+          />
+        </div>
+        <div id="">
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            placeholder="Last Name"
+          />
+        </div>
+        <div id="">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+        </div>
+        <div id="">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div id="">
+          <input
+            type="checkbox"
+            name="terms_and_conditions"
+            id="terms_and_conditions"
+          />&nbsp;I have read the
+          <span style="text-decoration: underline">terms and conditions</span>
+        </div>
+        <div id="">
+          <input type="submit" value="Sign Up" id="submit" onclick="signup()"/>
+        </div>
+        <div id="">
+          <p>Already have an account <a href="login.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+    <div id="footer" align="center">Music Corporation Limited</div>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

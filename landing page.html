@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <link rel="stylesheet" href="css/landing.css" />
+  </head>
+  <body>
+    <!-- header starts here -->
+    <div id="header">
+      <div align="center">
+        <img src="images/logo.png" alt="Logo" id="logo" />
+      </div>
+      <div><p id="logo_text">Music Lists</p></div>
+      <div>
+        <img src="images/profile.png" alt="" srcset="" id="profileimage" />
+      </div>
+    </div>
+    <br />
+    <div align="right">
+      <button
+        style="font-size: 2rem; background-color: red; color: white"
+        type="submit"
+        onclick="signout()"
+      >
+        Signout
+      </button>
+    </div>
+    <div id="main_content">
+      <div>
+        <div id="pos11">
+          <a href="add music.html" style="text-decoration: none">
+            <div>
+              <br />
+              <div align="center">
+                <img src="images/add music.png" alt="" srcset="" id="img11" />
+              </div>
+              <div align="center">
+                <p style="color: white; font-size: 2rem">Add Music</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="pos21">
+          <a href="edit music.html" style="text-decoration: none">
+            <div>
+              <br />
+              <div align="center">
+                <img src="images/edit icon.png" alt="" srcset="" id="img11" />
+              </div>
+              <div align="center">
+                <p style="color: white; font-size: 2rem">Edit Music</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div id="pos12">
+          <a href="delete music.html" style="text-decoration: none">
+            <div>
+              <div align="center">
+                <br />
+                <img src="images/delete icon.png" alt="" srcset="" id="img11" />
+              </div>
+              <div align="center">
+                <p style="color: white; font-size: 2rem">Delete music</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="pos22">
+          <a href="list view of music.html" style="text-decoration: none">
+            <div>
+              <div align="center">
+                <br />
+                <img src="images/music list.png" alt="" srcset="" id="img11" />
+              </div>
+              <div align="center">
+                <p style="color: white; font-size: 2rem">Music List</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="footer" align="center">Music Corporation Limited</div>
+    <script src="js/landing.js"></script>
+  </body>
+</html>

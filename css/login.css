@@ -1,0 +1,97 @@
+html {
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+#header {
+  width: 100%;
+  height: 45px;
+  background: #000000;
+  display: grid;
+  grid-template-columns: repeat(2, 4% 10%);
+}
+
+#logo {
+  width: 35px;
+  height: 35px;
+  margin-top: 3px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+#logo_text {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 10%;
+}
+
+#mainbody {
+  height: 28rem;
+  /* background-color:rgb(255, 255, 255); */
+  margin: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+#image {
+  height: 80%;
+  width: 80%;
+}
+
+#loginsection {
+  background-color: white;
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: repeat(7, 7fr);
+  margin-bottom: 20%;
+  padding: 5%;
+  border-radius: 2.5rem;
+}
+
+#title {
+  font-size: 3rem;
+}
+#note {
+  color: grey;
+}
+
+#inputs {
+}
+
+input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 2.5rem;
+  border: solid rgba(128, 128, 128, 0.418);
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: white;
+}
+
+/*footer starts*/
+#footer {
+  background-color: #000000;
+  color: white;
+  height: 3rem;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 2rem;
+}
+/*footer ends*/
+
+/* media Query */
+@media (max-width: 768px) {
+  #header {
+    grid-template-columns: repeat(2, 25% 75%);
+  }
+  #mainbody {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+  }
+  #title {
+    font-size: 2rem;
+  }
+}

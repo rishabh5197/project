@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <!-- header starts here -->
+    <div id="header">
+      <div align="center">
+        <img src="images/logo.png" alt="Logo" id="logo" />
+      </div>
+      <div><p id="logo_text">Music Lists</p></div>
+    </div>
+    <!-- header ends here -->
+
+    <!-- main body -->
+    <div align="center" style="width: 100%; font-size: 4rem; color: white">
+      Login
+    </div>
+    <div id="mainbody">
+      <div align="center">
+        <img
+          src="images/Blog post-bro.png"
+          alt="logging in"
+          srcset=""
+          id="image"
+        />
+      </div>
+      <div id="loginsection">
+        <div id="title" align="center">Sign In</div>
+        <div id="note"><p>Sign up on the internal platform</p></div>
+        <div id="inputs">
+          <input
+            type="email"
+            name="email"
+            id="email_address"
+            placeholder="Email Address"
+          />
+        </div>
+        <div id="inputs">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div id="signinbutton">
+          <input type="submit" value="Sign In" onclick="login()"/>
+        </div>
+        <div id="signup">
+          <p style="color: grey">
+            Don't have an account <a href="signup.html"><b>Sign Up</b></a>
+          </p>
+        </div>
+        <div id="forgetpassword">
+          <a href="forget password.html">Forget Password</a>
+        </div>
+      </div>
+    </div>
+    <!-- main body ends -->
+    <div id="footer" align="center">Music Corporation Limited</div>
+    <script src="js/login.js"></script>
+  </body>
+</html>

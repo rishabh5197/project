@@ -1,0 +1,229 @@
+/* header starts here */
+html {
+  font-size: 10px;
+}
+
+#header {
+  width: 100%;
+  height: 45px;
+  left: 0px;
+  background: #000000;
+  display: grid;
+  grid-template-columns: repeat(4, 4% 70% 12% 12%);
+}
+
+#header > div {
+  margin-top: 5px;
+}
+
+#logo {
+  width: 35px;
+  height: 35px;
+  margin-top: 3px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+#logo_text {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 10%;
+}
+
+#loginbutton {
+  width: 100%;
+  height: 65%;
+
+  background: #c4c4c4;
+  border-radius: 14px;
+  font-size: 1.5rem;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+#registerbutton {
+  width: 100%;
+  height: 65%;
+
+  background: #c4c4c4;
+  border-radius: 14px;
+  font-size: 1.5rem;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+/* header ends here */
+
+/* row-1 */
+
+#row1 {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin-top: 5%;
+  height: 45rem;
+}
+
+#row1image {
+  height: 90%;
+  width: 80%;
+}
+
+#row1text {
+  display: grid;
+  padding-top: 10%;
+  grid-template-columns: repeat(1);
+  grid-template-rows: repeat(2, 20% 30%);
+}
+
+#title1 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  padding-right: 10%;
+  /* border: solid black; */
+}
+
+#text1 {
+  font-size: 2rem;
+  padding-right: 10%;
+}
+
+/* row-1 ends */
+
+/* row-2 starts */
+#row2 {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin-top: 5%;
+}
+#row2image {
+  height: 90%;
+  width: 80%;
+}
+
+#text2 {
+  padding-left: 10%;
+  margin-top: 30%;
+  font-size: 2rem;
+}
+
+/* row-2 ends */
+
+/* row-3 starts */
+#row3 {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin-top: 5%;
+}
+
+#row3image {
+  height: 90%;
+  width: 80%;
+  padding-left: 10%;
+}
+
+#row3 > :nth-child(2) {
+  margin-top: 30%;
+  font-size: 2rem;
+}
+
+/* row-3 ends */
+
+/*footer starts*/
+#footer {
+  background-color: #000000;
+  color: white;
+  height: 3rem;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 2rem;
+}
+/*footer ends*/
+
+/* media Queries  starts*/
+@media (max-width: 700px) {
+  /* for header */
+  #header {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, 4fr);
+  }
+
+  #header > div {
+    margin: 0%;
+  }
+
+  #logo_text {
+    text-align: center;
+    padding-left: 0%;
+  }
+
+  #logo_text {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+  }
+
+  #loginbutton {
+    width: 20%;
+    height: 100%;
+  }
+  #registerbutton {
+    width: 20%;
+    height: 100%;
+  }
+
+  /* #row1 {
+    display: grid;
+    grid-template-rows: repeat(2, 2fr); */
+  /* margin-top: 5%; */
+  /* margin-top: 120px;
+  } */
+
+  /* for row-1 */
+  #row1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    margin-top: 10%;
+  }
+
+  #row1image {
+    height: 100%;
+    width: 100%;
+  }
+
+  #row1text {
+    padding-top: 0px;
+  }
+  #title1 {
+    font-size: 2.4rem;
+  }
+  #text1 {
+    padding-top: 5rem;
+    font-size: 2rem;
+  }
+
+  /* for row-2 */
+  #row2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 40% 60%);
+    margin-top: 70%;
+  }
+
+  /* for row-3 */
+
+  #row3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    margin-top: 5%;
+  }
+  #row3 > :nth-child(2) {
+    margin-top: 0%;
+    font-size: 2rem;
+  }
+}
+
+/* media Queries  ends*/
