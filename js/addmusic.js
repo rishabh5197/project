@@ -14,13 +14,14 @@ if (check_counter) {
 function addmusic() {
   title = document.getElementById("title").value;
   singer = document.getElementById("singer").value;
+  youtubeurl = document.getElementById("youtubeurl").value;
   duration = document.getElementById("duration").value;
   localStorage.setItem(
     verify_id.toString() + "_counter",
     parseInt(localStorage[verify_id + "_counter"]) + 1
   );
   counterset = localStorage[verify_id + "_counter"];
-  lists = [counterset, title, singer, duration];
+  lists = [counterset, title, singer, youtubeurl, duration];
   old_list = JSON.parse(
     localStorage.getItem(verify_id.toString() + "_songslist")
   );

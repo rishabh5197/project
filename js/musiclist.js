@@ -15,8 +15,9 @@ entered_id = sessionStorage.getItem("id_entered");
 allsongslist = JSON.parse(localStorage.getItem(entered_id + "_songslist"));
 for (i of allsongslist) {
   if (i) {
+    console.log(i[0], i[1], i[2], i[3], i[4]);
     document.getElementById("tables").innerHTML +=
-      "<tr align='center'><td>" +
+      "<tr align='center'> <td>" +
       i[0] +
       "</td>" +
       "<td>" +
@@ -25,8 +26,13 @@ for (i of allsongslist) {
       "<td>" +
       i[2] +
       "</td>" +
-      "<td>" +
+      "<td> <a target='blank'href='" +
+      i[3].toString() +
+      "'>" +
       i[3] +
+      "</a></td>" +
+      "<td>" +
+      i[4] +
       "</td></tr>";
   } else {
   }

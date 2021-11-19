@@ -64,7 +64,7 @@ html {
 #content {
   display: grid;
   /* grid-template-columns: repeat(1,1fr); */
-  grid-template-rows: repeat(6, 6fr);
+  grid-template-rows: repeat(7, 7fr);
   margin-top: 10%;
 }
 #cols {

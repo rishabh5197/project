@@ -21,7 +21,8 @@ function fetchsong() {
       if (id_to_fetch == i[0]) {
         document.getElementById("title").value = i[1];
         document.getElementById("singer").value = i[2];
-        document.getElementById("duration").value = i[3];
+        document.getElementById("youtubeurl").value = i[3];
+        document.getElementById("duration").value = i[4];
       } else {
         //   console.log("error");
       }
